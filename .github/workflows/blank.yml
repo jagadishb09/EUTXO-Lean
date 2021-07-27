@@ -34,4 +34,4 @@ jobs:
           cd EUTXO-Lean
           git checkout shared
           git merge main
-          git push --force
+          git push -f
