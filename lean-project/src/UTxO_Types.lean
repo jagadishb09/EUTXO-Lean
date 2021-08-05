@@ -12,7 +12,10 @@ structure TxOutputRef : Type :=
 (index : ℕ)     -- indicates which of the referred transaction's outputs should be spent
 
 -- definition for output transaction
-def TxOutput: Type := sorry 
+structure TxOutput:=
+(address:  Address)
+(value: Value)
+(datumHash: HashId) 
 
 -- pending transaction data types
 structure InputInfo :=
