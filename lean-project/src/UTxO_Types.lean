@@ -11,6 +11,9 @@ structure TxOutputRef : Type :=
 (hid  : HashId) -- the index of a previous transaction to which this input refers
 (index : ℕ)     -- indicates which of the referred transaction's outputs should be spent
 
+-- definition for output transaction
+def TxOutput: Type := sorry 
+
 -- pending transaction data types
 structure InputInfo :=
 (outputRef     : TxOutputRef)
